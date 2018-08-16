@@ -43,7 +43,7 @@ UnfindSourceDir="${PWD}/sourceUnfindName.txt"
 for file_a in ${InputDir}/*
  do
     temp_file=`basename $file_a`
-    temp_fileDir=${PWD}/$temp_file
+    temp_fileDir=${InputDir}/$temp_file
     echo $temp_fileDir >> $OutputFileDir
     echo $temp_file >> $OutputFile
 done
